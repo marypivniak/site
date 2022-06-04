@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>site</title>
+	<style type="text/css">
+		header{
+			height: 150px;
+			background-color: orange;
+			padding-top: 50px;
+		}
+		.menu{
+			width: 20%;
+
+		
+		
+			float: left;
+		}
+		.content{
+			width: 80%;
+			
+			float: left;
+
+		}
+		footer{
+			height: 150px;
+			background-color: red;	
+			clear: both;
+		}
+		body {
+				background-color: pink;
+			}
+
+			p {
+				color: orange;
+				font-family: 'Podkova', serif;
+				text-align: justify;
+				text-indent: 24px;
+				margin-left: 50px;
+				font-size: 40px;
+							}
+
+			h1 {
+				color: rgb(231, 231, 62);
+				text-shadow: rgb(47, 47, 207) 2px -2px;
+				font-size: 40px;
+				text-align: center;
+				font-family: 'Pattaya', sans-serif;
+			}
+
+			h2 {
+				color: rgb(241, 161, 175);
+				font-size: 40px;
+				text-align: center;
+			}
+
+			h3 {
+				color: rgb(241, 161, 237);
+				font-size: 40px;
+				text-align: left;
+			}
+
+			.first{
+				font-size: 48px;
+				color: rgb(217, 62, 231);
+				text-shadow: rgb(236, 42, 149) 1px -1px;
+			}
+
+
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #f00;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+	</style>
+</head>
+<body>
+<header><h1>Випускна робота Марії та Віри</h1></header>
+<div class="menu">
+	<h2>Меню</h2>
+	
+
+<a href="guss.html" target="_blank"><button class="glow-on-hover" type="button">Вгадай число</button></a>
+<a href="Марія.html" target="_blank"><button class="glow-on-hover" type="button">Час для знижок</button></a>
+<a href="loop.html" target="_blank"><button class="glow-on-hover" type="button">Сума</button></a>
+<a href=".html" target="_blank"><button class="glow-on-hover" type="button">перший сайт</button></a>
+<a href="if.html" target="_blank"><button class="glow-on-hover" type="button">магазин</button></a>
+
+</div>
+<div class="content">
+	<h1>Про нас</h1> 
+	<img src="MaryVira.jpg" style="width:500px; border-radius: 10%; box-shadow: 10px 10px 10px lightsalmon; display: block; margin: auto;">
+	<p>Ці всі сайти створили Марія (зправа) і Віра (зліва),  яких можна побачити на фотці вище.
+		 Ми з багатотодітної сім'ї, нас п'ятеро дітей.</p>
+    <p>РОБОТА БАТЬКІВ</p>
+    <p>Мама: бугалтер і має освіту перекладача</p>
+	<p>Тато: контрабасист а також зайсається невеличким бізнесом</p>
+	<p>НАШЕ ХОББІ</p>
+	<p>Віра: валяння і срорт</p>
+	<p>Марія: малювання, плавання, настільні ігри і голрволомки</p>
+</div>
+<footer><h2>Наші контакти</h2><p>ВІРА:+380950776494    МАРІЯ:+380667791328</p></footer>
+
+</body>
+</html>

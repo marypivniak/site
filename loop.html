@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>loop</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*let count=0;
+        while (count <= 4) {
+            alert(count);
+            count++;
+        }
+        let count=4;
+        while (count) {
+            alert(count);
+            count--;
+        }
+        let count=22;
+        do {
+            alert(count);
+            count++;
+         } while (count < 4);*/
+         let count = 0;
+         for (count  = 0; count < 4; count++){
+          alert(count);
+         }
+         /*let min=prompt('ведіть мінімальне число діапазону')
+         let max=prompt('ведіть максимальне число діапазону')
+         for (let i = min; i <= max; i++)
+             if(i%2==0)
+            document.write(i+'')
+         }
+         }*/
+         /*let min=prompt('ведіть мінімальне число діапазону')
+         let max=prompt('ведіть максимальне число діапазону')
+         let sum=0;
+         for (let i = min; i <= max; i++) {
+             sum=sum+i;
+         }
+         document.write('ведіть число','');*/
+let sum =0;
+while(true) {
+let value= +prompt('Ведіть число,');
+if(!value) break;
+sum =sum + value;
+}
+alert('Сума:'+sum);
+
+</script>
+</body>
+</html>
